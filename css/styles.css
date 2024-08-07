@@ -45,6 +45,7 @@
     box-sizing: border-box;
 }
 
+
 body {
 background-color: #FAF4EA;
 color: var(--color-primary-dark);
@@ -139,7 +140,7 @@ ul {
 /* Hero section */
 .hero-section {
     padding: 272px 0;
-    background-image: url(/images/hero-section-bc.jpg);
+    background-image: url(../images/hero-section-bc.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -278,6 +279,26 @@ font-weight: 600;
     flex-basis: calc(100% - 40px / 3);
 }
 
+/* Carousel */
+.carousel-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid var(--color-primary-dark);
+    fill: var(--color-primary-dark);
+    cursor: pointer;
+    }
+
+.carousel-button:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+}
+
 /* Contact section */
 .contact-section {
     margin-bottom: 16px;
@@ -302,8 +323,16 @@ font-weight: 600;
 
 .footer {
     background-color: var(--color-primary-dark);
-    background-image: url('/images/footer-bc.png');
+    background-image: url('../images/footer-bc.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.address-icon {
+    fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+    fill: var(--color-brand-normal);
 }
