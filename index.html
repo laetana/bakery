@@ -138,6 +138,11 @@
             <ul class="formats-list">
               <li class="formats-items">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/Walrus.jpg"
+                    alt="Walrus format"
+                  />
                   <h3 class="formats-title" lang="en">Walrus</h3>
                   <div class="formats-text">
                     <p>Площа: до 120 м2</p>
@@ -152,6 +157,11 @@
               </li>
               <li class="formats-items">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/Horseshoe.jpg"
+                    alt="Horseshoe format"
+                  />
                   <h3 class="formats-title" lang="en">Horseshoe</h3>
                   <div class="formats-text">
                     <p>Площа: до 25 м2</p>
@@ -163,6 +173,11 @@
               </li>
               <li class="formats-items">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/Handlebar.jpg"
+                    alt="Handlebar format"
+                  />
                   <h3 class="formats-title" lang="en">Handlebar</h3>
                   <div class="formats-text">
                     <p>Площа: до 15 м2</p>
@@ -189,7 +204,7 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <form name="contact-form" autocomplete="off" novalidate>
+              <form name="contact-form" autocomplete="off">
                 <div class="form-field">
                   <label class="form-label visually-hiden" for="user-name"
                     >Ім’я</label
@@ -200,6 +215,9 @@
                     id="user-name"
                     name="user-name"
                     placeholder="Ім’я"
+                    required
+                    minlength="2"
+                    maxlength="20"
                   />
                 </div>
                 <div class="form-field">
@@ -212,6 +230,7 @@
                     id="user-tel"
                     name="user-tel"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
                 <div class="form-field">
@@ -224,6 +243,7 @@
                     id="user-email"
                     name="user-email"
                     placeholder="Електронна пошта"
+                    required
                   />
                 </div>
                 <button class="button form-button" type="submit">
@@ -320,7 +340,7 @@
         <button class="modal-btn-close" type="button">X</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hiden" for="user-name"
               >Ім’я</label
@@ -331,6 +351,9 @@
               id="user-name"
               name="user-name"
               placeholder="Ім’я"
+              required
+              minlength="2"
+              maxlength="20"
             />
           </div>
           <div class="form-field">
@@ -343,6 +366,7 @@
               id="user-tel"
               name="user-tel"
               placeholder="Телефон"
+              required
             />
           </div>
           <div class="form-field">
@@ -355,6 +379,7 @@
               id="user-email"
               name="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
           <button class="button form-button" type="submit">
