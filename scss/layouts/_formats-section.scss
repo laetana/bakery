@@ -1,0 +1,18 @@
+.formats-title {
+    margin-bottom: 80px;
+}
+
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.formats-list {
+    display: flex;
+    gap: 20px;
+}
+
+.formats-items {
+    flex-basis: calc(100% - 40px / 3);
+}
