@@ -6,45 +6,45 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
+    
+    &::before,
+    &::after {
+        position: absolute;
+        background-repeat: no-repeat;
+        content: '';
+        bottom: 0;
+    }
+    
+    &::before {
+        background-image: url(../images/bread-decor-small.png);
+        height: 120px;
+        width: 180px;
+        left: 0;
+    }
+    
+    &::after {
+        background-image: url(../images/bread-decor-large.png);
+        height: 188px;
+        width: 380px;
+        right: 0;
+    }
 
-.footer::before,
-.footer::after {
-    position: absolute;
-    background-repeat: no-repeat;
-    content: '';
-    bottom: 0;
-}
-
-.footer::before {
-    background-image: url(../images/bread-decor-small.png);
-    height: 120px;
-    width: 180px;
-    left: 0;
-}
-
-.footer::after {
-    background-image: url(../images/bread-decor-large.png);
-    height: 188px;
-    width: 380px;
-    right: 0;
-}
-
-.footer-container {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-nav,
-.footer-address {
-    display: flex;
-    flex-basis: 50%;
-    gap: 20px;
-}
-
-.footer-logo,
-.footer-menu {
-    flex-grow: 1;
+        &__container {
+            display: flex;
+            gap: 20px;
+        }
+    
+        &__nav,
+        &__address {
+            display: flex;
+            flex-basis: 50%;
+            gap: 20px;
+        }
+    
+        &__logo,
+        &__menu {
+            flex-grow: 1;
+        }
 }
 
 .address-list,

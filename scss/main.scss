@@ -2,6 +2,7 @@
 @import './utils/variables';
 @import './base';
 @import './utils/utils';
+@import './utils/texts';
 
 @import './components/buttons';
 @import './components/links';
@@ -17,7 +18,8 @@
 @import './layouts/traditions-section';
 @import './layouts/chefs-section';
 @import './layouts/formats-section';
+@import './layouts/form-terms';
 @import './layouts/contact-section';
 @import './layouts/footer';
 @import './layouts/modal';
-@import './layouts/form';
+@import './layouts/input';

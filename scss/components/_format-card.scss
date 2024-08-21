@@ -10,31 +10,31 @@
     background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%,
             rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
     transition: transform 0.3s;
-}
 
-.format-card:hover {
-    transform: scale(1.05);
-}
+    &:hover {
+            transform: scale(1.05);
+        }
 
-.format-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.format-title {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.format-text {
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.format-text p {
-    margin-bottom: 2px;
+        &__image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    
+        &__title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+    
+        &__text {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    
+        &__text p {
+            margin-bottom: 2px;
+        }
 }

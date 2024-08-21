@@ -28,6 +28,10 @@
     background-color: var(--color-primary-light);
     border-radius: 32px;
     overflow-y: auto;
+
+    &__form-field {
+        margin-bottom: 32px;
+    }
 }
 
 .modal-btn-close {
