@@ -31,49 +31,61 @@
 
         &__container {
             display: flex;
+            flex-direction: column;
             gap: 20px;
+
+            @media screen and (min-width: $bp-desktop) {
+                    flex-direction: row;
+                }
         }
     
         &__nav,
         &__address {
             display: flex;
-            flex-basis: 50%;
+            flex-direction: column;
             gap: 20px;
+            text-align: center;
+            
+            @media screen and (min-width: $bp-desktop) {
+                flex-direction: row;
+                flex-basis: 50%;
+                text-align: left;
+                }
         }
     
         &__logo,
         &__menu {
             flex-grow: 1;
         }
-}
-
-.address-list,
-.address-info {
-    flex-grow: 1;
-}
-
-.address-link {
-    font-size: 16px;
-    font-weight: 300;
-    text-decoration: none;
-    font-style: normal;
-    color: var(--color-primary-light);
-}
-
-.address-link:hover {
-    color: var(--color-brand-normal);
-}
-
-.address-copyright {
-    font-size: 14px;
-    font-style: normal;
-    color: var(--color-secondary-dark);
-}
-
-.address-icon {
-    fill: var(--color-primary-light);
-}
-
-.address-icon:hover {
-    fill: var(--color-brand-normal);
+        
+        &__address-list,
+        &__address-info {
+            flex-grow: 1;
+        }
+        
+        &__address-link {
+            font-size: 16px;
+            font-weight: 300;
+            text-decoration: none;
+            font-style: normal;
+            color: var(--color-primary-light);
+        }
+        
+        &__address-link:hover {
+            color: var(--color-brand-normal);
+        }
+        
+        &__address-copyright {
+            font-size: 14px;
+            font-style: normal;
+            color: var(--color-secondary-dark);
+        }
+        
+        &__address-icon {
+            fill: var(--color-primary-light);
+        }
+        
+        &__address-icon:hover {
+            fill: var(--color-brand-normal);
+        }
 }

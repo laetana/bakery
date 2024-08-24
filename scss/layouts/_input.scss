@@ -5,12 +5,16 @@
 
     &__control {
         width: 100%;
-        padding: 16px 42px;
+        padding: 8px 24px;
         border: 1px solid var(--color-secondary-dark);
         border-radius: 8px;
         background-color: transparent;
         font-size: 16px;
         line-height: 1.17;
+
+        @media screen and (min-width: $bp-tablet) {
+            padding: 16px 42px;
+            }
         
         &:focus {
             border-color: var(--color-brand-normal);
