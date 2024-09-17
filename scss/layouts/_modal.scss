@@ -29,6 +29,18 @@
     border-radius: 32px;
     overflow-y: auto;
 
+    &__title {
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 8px;
+    }
+
+    &__text {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 72px;
+    }
+
     @media screen and (min-width: $bp-desktop) {
             padding: 128px;
         }
@@ -36,6 +48,14 @@
     &__form-field {
         margin-bottom: 32px;
     }
+
+    &__close {
+        background-color: transparent;
+        border: none;
+        color: var(--color-primary-dark);
+        cursor: pointer;
+    }
+
 }
 
 .modal-btn-close {

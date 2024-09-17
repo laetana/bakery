@@ -41,6 +41,23 @@
             <button class="mobile-menu__btn-close menu-btn-close" type="button">
               Close
             </button>
+            <nav class="header__nav">
+              <a href="./index.html">
+                <img src="./images/logo-small.svg" alt="Shop's logo" />
+              </a>
+              <ul class="header__menu">
+                <li>
+                  <a class="nav-link" href="#traditions-section"
+                    >Our traditions</a
+                  >
+                </li>
+                <li><a class="nav-link" href="#chefs-section">Chefs</a></li>
+                <li><a class="nav-link" href="#formats-section">Formats</a></li>
+                <li>
+                  <a class="nav-link" href="#contact-section">Contacts</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -408,9 +425,15 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">X</button>
-        <h2>Замовити дзвінок</h2>
-        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <button class="modal-btn-close modal__close" type="button">
+          <svg width="16" height="16">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__text">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
         <form name="modal-form" autocomplete="off">
           <div class="modal__form-field input">
             <label class="input__label visually-hidden" for="user-name"
