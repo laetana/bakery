@@ -1,0 +1,15 @@
+{
+  "name": "Backery-shop",
+  "short_name": "Bakery",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "bakery.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "display": "standalone",
+  "theme_color": "#317EFB",
+  "background_color": "#FFFFFF"
+}
